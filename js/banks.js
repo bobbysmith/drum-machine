@@ -42,42 +42,42 @@ var bank1 = {
       url: 'sound/808/shaker.wav',
       buffer: undefined
     },
-    70: {
+    68: {
       name: 'rimshot',
       url: 'sound/808/rimshot.wav',
       buffer: undefined
     },
-    71: {
+    70: {
       name: 'low tom',
       url: 'sound/808/low_tom.wav',
       buffer: undefined
     },
-    72: {
+    71: {
       name: 'medium tom',
       url: 'sound/808/medium_tom.wav',
       buffer: undefined
     },
-    74: {
+    72: {
       name: 'high tom',
       url: 'sound/808/high_tom.wav',
       buffer: undefined
     },
-    86: {
+    67: {
       name: 'wood block',
       url: 'sound/808/block.wav',
       buffer: undefined
     },
-    66: {
+    86: {
       name: 'low congo',
       url: 'sound/808/low_congo.wav',
       buffer: undefined
     },
-    78: {
+    66: {
       name: 'medium congo',
       url: 'sound/808/medium_congo.wav',
       buffer: undefined
     },
-    77: {
+    78: {
       name: 'high congo',
       url: 'sound/808/high_congo.wav',
       buffer: undefined
