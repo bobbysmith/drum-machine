@@ -36,10 +36,22 @@ $(document).ready(function(){
     loadAudioFile(sound.url);
   };
 
-  $('.pad').on('click', function (e){
+  window.stopSound = function (soundId) {
+    var sound = bank1.sounds(soundId);
+    sound.pause(sound.url);
+    loadAudioFile(sound.url);
+  };e
+
+  $('.pad').on('keydown', function (e){
     var soundId = $(this).data('id');
+
     playSound(soundId);
   });
+
+  $('.pad').on('keyup', function (e) {
+    var soundId = $(this).data('id');
+    stopSound(soundId);
+  })
 
 });
 

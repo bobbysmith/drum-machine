@@ -38,6 +38,7 @@ body {
   box-shadow: 0px 0px 25px #111 inset, 0px 5px 5px #111;
   border: 2px solid #333;
   border-radius: 20px
+
 }
 
 #left {
@@ -89,10 +90,9 @@ body {
   right: 25px;
   padding: 0;
   margin-left: 20px;
-}
-
-#display {
   /*background: #bdc6b3;*/
+  height: 60px;
+  width: 300px;
   background: #b7cada;
   border: 2px solid #aaa;
   padding: 15px;
@@ -103,11 +103,22 @@ body {
 /*  -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
   -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
   box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);*/
--webkit-box-shadow: -2px -4px 73px -14px rgba(183,202,218,1);
--moz-box-shadow: -2px -4px 73px -14px rgba(183,202,218,1);
-box-shadow: -2px -4px 73px -14px rgba(183,202,218,1);
+  -webkit-box-shadow: -2px -4px 73px -14px rgba(183,202,218,1);
+  -moz-box-shadow: -2px -4px 73px -14px rgba(183,202,218,1);
+  box-shadow: -2px -4px 73px -14px rgba(183,202,218,1);
 }
 
+#screen {
+  margin-left: 30px;
+  padding: 5px;
+}
+
+#screen .titles {
+  padding: 5px;
+  font-size: 1.2em;
+  font-family: "Digital-7";
+  color: black;
+}
 #pads {
   width: 535px;
   /*background: -webkit-linear-gradient(bottom, rgb(80,96,97) 0%, rgb(99,119,122) 100%);*/
@@ -118,6 +129,7 @@ box-shadow: -2px -4px 73px -14px rgba(183,202,218,1);
   position: absolute;
   right: 25px;
   bottom: 25px;
+
 }
 
 #pads button {
@@ -138,12 +150,14 @@ box-shadow: -2px -4px 73px -14px rgba(183,202,218,1);
   height: 110px;
   width:  110px;
   margin: 10px;
-  color: #444;
   text-shadow:  0 1px 2px #fff;
   font-size: 90%;
   text-align: right;
   padding-top: 85px;
   display: inline-block;
+  font-family: 'Digital-7';
+  font-size: 1.5em;
+  color: black;
 /*  -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .30);
   -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .30);
   box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .30);*/
@@ -190,14 +204,14 @@ box-shadow: -2px -2px 65px -2px rgba(240,137,63,1);
 }
 
 #transport #banks button {
-background: #ffffff; /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #b045be 75%); /* FF3.6+ */
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(75%,#b045be)); /* Chrome,Safari4+ */
-background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#b045be 75%); /* Chrome10+,Safari5.1+ */
-background: -o-radial-gradient(center, ellipse cover,  #ffffff 0%,#b045be 75%); /* Opera 12+ */
-background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#b045be 75%); /* IE10+ */
-background: radial-gradient(ellipse at center,  #ffffff 0%,#b045be 75%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b045be',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: #ffffff; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #b045be 75%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(75%,#b045be)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#b045be 75%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #ffffff 0%,#b045be 75%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#b045be 75%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #ffffff 0%,#b045be 75%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b045be',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
   display: block;
   width: 250px;
@@ -205,6 +219,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   padding: 10px 20px 10px 20px;
   margin-left: 60px;
   margin-bottom: 10px;
+  font-size: 1.5em;
+  font-family: 'Play';
+  /*text-align: left;*/
+  color: black;
 /*  -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
   -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
   box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);*/
@@ -345,6 +363,18 @@ box-shadow: -2px -2px 65px -4px rgba(255,22,88,1);
   font-style: normal;
   font-weight: 400;
   src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Prometheus';
+    src: url(../fonts/PROMETHEUS.ttf);
+    /*font-weight:400;*/
+}
+
+@font-face {
+    font-family: 'Digital-7';
+    src: url(../fonts/digital-7.ttf);
+    /*font-weight:400;*/
 }
 
 @-webkit-keyframes neon2 {
