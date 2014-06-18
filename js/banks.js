@@ -86,92 +86,92 @@ var bank1 = {
   }
 };
 
-// var bank2 = {
-//   name: 'House',
-//   description: '4 on tha floor',
-//   sounds: {
-//     52: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     53: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     54: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     55: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     82: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     84: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     89: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     85: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     70: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     71: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     72: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     74: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     86: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     66: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     78: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     },
-//     77: {
-//       name: ''
-//       url: 'sound/house/'
-//       buffer: undefined
-//     }
-//   }
-// };
+var bank2 = {
+  name: 'House',
+  description: '4 on tha floor',
+  sounds: {
+    52: {
+      name: 'kick',
+      url: 'sound/house/808_kick.wav',
+      buffer: undefined
+    },
+    53: {
+      name: 'snare',
+      url: 'sound/house/909_snare.wav',
+      buffer: undefined
+    },
+    54: {
+      name: 'clap',
+      url: 'sound/house/clap.wav',
+      buffer: undefined
+    },
+    55: {
+      name: 'steel drum',
+      url: 'sound/house/steel_drum.wav',
+      buffer: undefined
+    },
+    82: {
+      name: 'cymbal',
+      url: 'sound/house/cymbal.wav',
+      buffer: undefined
+    },
+    84: {
+      name: 'hi-hat',
+      url: 'sound/house/hihat.wav',
+      buffer: undefined
+    },
+    89: {
+      name: 'high tom',
+      url: 'sound/house/high_tom.wav',
+      buffer: undefined
+    },
+    85: {
+      name: 'medium tom',
+      url: 'sound/house/medium_tom.wav',
+      buffer: undefined
+    },
+    70: {
+      name: 'low tom',
+      url: 'sound/house/low_tom.wav',
+      buffer: undefined
+    },
+    71: {
+      name: 'tambourine',
+      url: 'sound/house/tambourine.wav',
+      buffer: undefined
+    },
+    72: {
+      name: 'much body vocal',
+      url: 'sound/house/much_body.wav',
+      buffer: undefined
+    },
+    74: {
+      name: 'body vocal',
+      url: 'sound/house/body.wav',
+      buffer: undefined
+    },
+    86: {
+      name: 'cowbell',
+      url: 'sound/house/808_cowbell.wav',
+      buffer: undefined
+    },
+    66: {
+      name: 'organ loop',
+      url: 'sound/house/organ_loop.wav',
+      buffer: undefined
+    },
+    78: {
+      name: 'horn',
+      url: 'sound/house/horn.wav',
+      buffer: undefined
+    },
+    77: {
+      name: 'bass',
+      url: 'sound/house/bass.wav',
+      buffer: undefined
+    }
+  }
+};
 
 // var bank3 = {
 //   name: 'Dancehall',
@@ -522,8 +522,8 @@ var bank1 = {
 // };
 
 var banks = {
-  1: bank1
-  // 2: bank2,
+  1: bank1,
+  2: bank2
   // 3: bank3,
   // 4: bank4,
   // 5: bank5,
