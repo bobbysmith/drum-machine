@@ -1,3 +1,4 @@
+
 var bank1 = {
   name: '808',
   description: "If you don't know you better ask somebody",
@@ -519,3 +520,12 @@ var bank1 = {
 //     }
 //   }
 // };
+
+var banks = {
+  1: bank1
+  // 2: bank2,
+  // 3: bank3,
+  // 4: bank4,
+  // 5: bank5,
+  // 6: bank6
+};

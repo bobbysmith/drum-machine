@@ -31,16 +31,48 @@ $(document).ready(function(){
     request.send();
   };
 
-  window.playSound = function (soundId) {
-    var sound = bank1.sounds[soundId];
+  window.playSound = function (soundId, bank) {
+    var sound = bank.sounds[soundId];
     loadAudioFile(sound.url);
   };
 
-  $('.pad').on('keydown', function (e){
+  var selectedBank = function(){
+    var bankId = $('.bank.selected').data('id');
+    var bank = banks[bankId];
+    return bank;
+  };
+
+
+  $('.bank').on('click', function (e){
+    $('.bank.selected').removeClass('selected');
+    $(this).addClass("selected");
+
+    var bank = selectedBank();
+
+    $('#current-bank span').text(bank.name);
+    $('#description span').text(bank.description);
+  });
+
+  $(document).on('keydown', function (e){
+    var currentPad = $(".pad[data-id=" + e.keyCode + "]");
+    currentPad.addClass("selected");
+
+    var soundId = e.keyCode;
+    var bank = selectedBank();
+
+    playSound(soundId, bank);
+
+    setTimeout(function(){
+      currentPad.removeClass("selected");
+    }, 100);
+  });
+
+
+  $('.pad').on('click', function (e){
     var soundId = $(this).data('id');
-    if( === soundId){
-      playSound(soundId);
-    }
+    var bank = selectedBank();
+
+    playSound(soundId, bank);
   });
 
 });

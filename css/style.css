@@ -167,11 +167,25 @@ body {
 
 
 
-button.pressed {
+/*button.pressed {
   -webkit-animation: pad_hit 0.1s 1;
-}
+}*/
 
 #pads button:hover {
+  background: #ffaf9b; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #ffaf9b 0%, #ff3700 74%, #ff3700 74%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffaf9b), color-stop(74%,#ff3700), color-stop(74%,#ff3700)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #ffaf9b 0%,#ff3700 74%,#ff3700 74%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #ffaf9b 0%,#ff3700 74%,#ff3700 74%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #ffaf9b 0%,#ff3700 74%,#ff3700 74%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #ffaf9b 0%,#ff3700 74%,#ff3700 74%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf9b', endColorstr='#ff3700',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  -webkit-box-shadow: -2px -2px 65px -2px rgba(240,137,63,1);
+  -moz-box-shadow: -2px -2px 65px -2px rgba(240,137,63,1);
+  box-shadow: -2px -2px 65px -2px rgba(240,137,63,1);
+}
+
+#pads button.selected {
   background: #ffaf9b; /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover,  #ffaf9b 0%, #ff3700 74%, #ff3700 74%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffaf9b), color-stop(74%,#ff3700), color-stop(74%,#ff3700)); /* Chrome,Safari4+ */
@@ -237,7 +251,7 @@ button.pressed {
   height: 20px;
 }
 
-#transport #banks button:focus {
+#transport #banks .selected {
   outline: 0;
   background: #ffffff; /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #a600bc 75%); /* FF3.6+ */
