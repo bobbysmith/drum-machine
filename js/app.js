@@ -55,6 +55,19 @@ $(document).ready(function(){
     $('#description span').text(bank.description);
   });
 
+  // $('.bank').on('keydown', function (e){
+  //   var currentBank = $(".bank[data-id=" + e.keyCode + "]");
+
+  //   $('.bank.selected').removeClass('selected');
+  //   $(this).addClass("selected");
+
+  //   var bank = selectedBank();
+
+  //   $('#current-bank span').text(bank.name);
+  //   $('#description span').text(bank.description);
+  //   $('#name span').text(bank.name.sounds.name);
+  // });
+
 
   $(document).on('keydown', function (e){
     var currentPad = $(".pad[data-id=" + e.keyCode + "]");
@@ -62,6 +75,8 @@ $(document).ready(function(){
 
     var soundId = e.keyCode;
     var bank = selectedBank();
+
+    $('#sample span').text(bank.sounds[soundId].sample);
 
     playSound(soundId, bank);
 
@@ -74,6 +89,8 @@ $(document).ready(function(){
   $('.pad').on('click', function (e){
     var soundId = $(this).data('id');
     var bank = selectedBank();
+
+    $('#sample span').text(bank.sounds[soundId].sample);
 
     playSound(soundId, bank);
   });
