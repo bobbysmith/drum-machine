@@ -44,6 +44,15 @@ $(document).ready(function(){
     return bank;
   };
 
+  var bankKeys = {
+    49: 1,
+    50: 2,
+    51: 3,
+    52: 4,
+    53: 5,
+    54: 6
+  };
+
 
   $('.bank').on('click', function (e){
     $('.bank.selected').removeClass('selected');
@@ -55,21 +64,25 @@ $(document).ready(function(){
     $('#description span').text(bank.description);
   });
 
-  // $('.bank').on('keydown', function (e){
-  //   var currentBank = $(".bank[data-id=" + e.keyCode + "]");
-
-  //   $('.bank.selected').removeClass('selected');
-  //   $(this).addClass("selected");
-
-  //   var bank = selectedBank();
-
-  //   $('#current-bank span').text(bank.name);
-  //   $('#description span').text(bank.description);
-  //   $('#name span').text(bank.name.sounds.name);
-  // });
+  function selectBank(bankId) {
+      $('.bank.selected').removeClass('selected');
+      $(".bank[data-id=" + bankId + "]").addClass("selected");
+  }
 
 
   $(document).on('keydown', function (e){
+    if (bankKeys[e.keyCode]) {
+      selectBank(bankKeys[e.keyCode]);
+      var bank = selectedBank();
+
+      console.log(bank);
+
+      $('#current-bank span').text(bank.name);
+      $('#description span').text(bank.description);
+      }
+    // } else if (padKeyCode[e.keyCode]) {
+
+    // }
     var currentPad = $(".pad[data-id=" + e.keyCode + "]");
     currentPad.addClass("selected");
 
