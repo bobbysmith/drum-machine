@@ -7,11 +7,28 @@ $(document).ready(function(){
           $element.addClass('selected');
           setTimeout(function() {
             $element.removeClass('selected');
-          }, 200 * index);
-        }, 200 * index);
+          }, 100);
+        }, 130 * index );
       })(index, $(element));
     });
   };
+
+  var bankLights = function(){
+    $('.bank[data-id]').each(function(index, element) {
+      (function(index, $element) {
+        setTimeout(function() {
+          $element.addClass('selected');
+          setTimeout(function() {
+            $element.removeClass('selected');
+          }, 400);
+        }, 485 * index );
+      })(index, $(element));
+    });
+  };
+
+  bankLights();
+  bankLights();
+  lightDemo();
 
 
   var AudioContext = AudioContext || webkitAudioContext;
