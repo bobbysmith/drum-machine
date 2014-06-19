@@ -9,6 +9,8 @@ images/stop.png
 images/undo.png
 js/app.js
 js/banks.js
+http://code.jquery.com/jquery.min.js
+http://fonts.googleapis.com/css?family=Play
 
 sound/808/block.wav
 sound/808/clap.wav
