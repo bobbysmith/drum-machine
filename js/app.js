@@ -27,9 +27,7 @@ $(document).ready(function(){
   };
 
   bankLights();
-  bankLights();
   lightDemo();
-
 
   var AudioContext = AudioContext || webkitAudioContext;
 
@@ -44,6 +42,10 @@ $(document).ready(function(){
 
   var loadAudioFile = function (url) {
     // cache here
+    lawnchair(function(){
+      this.save({msg:'hooray!'})
+    });
+
     var request = new XMLHttpRequest();
 
     // TODO: Implement some caching so you don't have to make an HTTP request every time you play a sound
