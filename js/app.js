@@ -44,6 +44,7 @@ $(document).ready(function(){
     return bank;
   };
 
+
   var bankKeys = {
     49: 1,
     50: 2,
@@ -74,8 +75,6 @@ $(document).ready(function(){
     if (bankKeys[e.keyCode]) {
       selectBank(bankKeys[e.keyCode]);
       var bank = selectedBank();
-
-      console.log(bank);
 
       $('#current-bank span').text(bank.name);
       $('#description span').text(bank.description);

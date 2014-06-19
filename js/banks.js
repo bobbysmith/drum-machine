@@ -63,22 +63,22 @@ var bank1 = {
       url: 'sound/808/high_tom.wav',
       buffer: undefined
     },
-    78: {
+    66: {
       sample: 'wood block',
       url: 'sound/808/block.wav',
       buffer: undefined
     },
-    77: {
+    78: {
       sample: 'low congo',
       url: 'sound/808/low_congo.wav',
       buffer: undefined
     },
-    188: {
+    77: {
       sample: 'medium congo',
       url: 'sound/808/medium_congo.wav',
       buffer: undefined
     },
-    190: {
+    188: {
       sample: 'high congo',
       url: 'sound/808/high_congo.wav',
       buffer: undefined
@@ -106,8 +106,8 @@ var bank2 = {
       buffer: undefined
     },
     48: {
-      sample: 'steel drum',
-      url: 'sound/house/steel_drum.wav',
+      sample: 'hi-hat',
+      url: 'sound/house/hihat.wav',
       buffer: undefined
     },
     89: {
@@ -116,23 +116,23 @@ var bank2 = {
       buffer: undefined
     },
     85: {
-      sample: 'hi-hat',
-      url: 'sound/house/hihat.wav',
-      buffer: undefined
-    },
-    73: {
       sample: 'high tom',
       url: 'sound/house/high_tom.wav',
       buffer: undefined
     },
-    79: {
+    73: {
       sample: 'medium tom',
       url: 'sound/house/medium_tom.wav',
       buffer: undefined
     },
-    72: {
+    79: {
       sample: 'low tom',
       url: 'sound/house/low_tom.wav',
+      buffer: undefined
+    },
+    72: {
+      sample: 'steel drum',
+      url: 'sound/house/steel_drum.wav',
       buffer: undefined
     },
     74: {
@@ -150,22 +150,22 @@ var bank2 = {
       url: 'sound/house/body.mp3',
       buffer: undefined
     },
-    78: {
+    66: {
       sample: 'cowbell',
       url: 'sound/house/808_cowbell.wav',
       buffer: undefined
     },
-    77: {
+    78: {
       sample: 'bass',
       url: 'sound/house/bass.wav',
       buffer: undefined
     },
-    188: {
+    77: {
       sample: 'horn',
       url: 'sound/house/horn.wav',
       buffer: undefined
     },
-    190: {
+    188: {
       sample: 'synth',
       url: 'sound/house/synth.wav',
       buffer: undefined
@@ -173,92 +173,92 @@ var bank2 = {
   }
 };
 
-// var bank3 = {
-//   name: 'Dancehall',
-//   description: 'Reeeeeeeewiiiiind Selecta!',
-//   sounds: {
-//     52: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     53: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     54: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     55: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     82: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     84: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     89: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     85: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     70: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     71: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     72: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     74: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     86: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     66: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     78: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     },
-//     77: {
-//       sample: ''
-//       url: 'sound/dancehall/'
-//       buffer: undefined
-//     }
-//   }
-// };
+var bank3 = {
+  name: 'Dancehall',
+  description: 'Reeeeeeeewiiiiind Selecta!',
+  sounds: {
+    55: {
+      sample: 'kick',
+      url: 'sound/dancehall/kick.wav',
+      buffer: undefined
+    },
+    56: {
+      sample: 'snare',
+      url: 'sound/dancehall/snare.wav',
+      buffer: undefined
+    },
+    57: {
+      sample: 'hi-hat',
+      url: 'sound/dancehall/hihat02.wav',
+      buffer: undefined
+    },
+    48: {
+      sample: 'shaker',
+      url: 'sound/dancehall/shaker.wav',
+      buffer: undefined
+    },
+    89: {
+      sample: 'timbali',
+      url: 'sound/dancehall/timbali.wav',
+      buffer: undefined
+    },
+    85: {
+      sample: 'riddim',
+      url: 'sound/dancehall/riddim.wav',
+      buffer: undefined
+    },
+    73: {
+      sample: 'dutty',
+      url: 'sound/dancehall/dutty.wav',
+      buffer: undefined
+    },
+    79: {
+      sample: 'hey',
+      url: 'sound/dancehall/hey.mp3',
+      buffer: undefined
+    },
+    72: {
+      sample: 'bumbaclot',
+      url: 'sound/dancehall/bumbaclat.wav',
+      buffer: undefined
+    },
+    74: {
+      sample: 'yeah mon',
+      url: 'sound/dancehall/yeah_mon.wav',
+      buffer: undefined
+    },
+    75: {
+      sample: 'uhh',
+      url: 'sound/dancehall/uhh.wav',
+      buffer: undefined
+    },
+    76: {
+      sample: 'beenie man vox',
+      url: 'sound/dancehall/beenie.wav',
+      buffer: undefined
+    },
+    66: {
+      sample: 'gunshot',
+      url: 'sound/dancehall/gunshot.wav',
+      buffer: undefined
+    },
+    78: {
+      sample: 'laser',
+      url: 'sound/dancehall/laser.wav',
+      buffer: undefined
+    },
+    77: {
+      sample: 'lasers',
+      url: 'sound/dancehall/lazerzz.wav',
+      buffer: undefined
+    },
+    188: {
+      sample: 'airhorn',
+      url: 'sound/dancehall/airhorn.mp3',
+      buffer: undefined
+    }
+  }
+};
 
 var bank4 = {
   name: 'Hip Hop',
@@ -300,8 +300,8 @@ var bank4 = {
       buffer: undefined
     },
     79: {
-      sample: 'synth',
-      url: 'sound/hip-hop/synth.wav',
+      sample: 'synth stab',
+      url: 'sound/hip-hop/stab.wav',
       buffer: undefined
     },
     72: {
@@ -324,22 +324,22 @@ var bank4 = {
       url: 'sound/hip-hop/hit_me.wav',
       buffer: undefined
     },
-    78: {
+    66: {
       sample: 'Ooh Vox',
       url: 'sound/hip-hop/ooh.wav',
       buffer: undefined
     },
-    77: {
+    78: {
       sample: 'Yeeahhhh!',
       url: 'sound/hip-hop/yea.wav',
       buffer: undefined
     },
-    188: {
-      sample: 'Hold Up',
-      url: 'sound/hip-hop/hold_up.wav',
+    77: {
+      sample: 'yo',
+      url: 'sound/hip-hop/yo.wav',
       buffer: undefined
     },
-    190: {
+    188: {
       sample: 'sfx',
       url: 'sound/hip-hop/sfx_hit.wav',
       buffer: undefined
@@ -347,92 +347,92 @@ var bank4 = {
   }
 };
 
-// var bank5 = {
-//   name: 'Soul',
-//   description: "Wavy bro.",
-//   sounds: {
-//     52: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     53: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     54: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     55: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     82: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     84: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     89: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     85: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     70: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     71: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     72: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     74: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     86: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     66: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     78: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     },
-//     77: {
-//       sample: ''
-//       url: 'sound/chill/'
-//       buffer: undefined
-//     }
-//   }
-// };
+var bank5 = {
+  name: 'Soul',
+  description: "Get on up",
+  sounds: {
+    55: {
+      sample: 'kick',
+      url: 'sound/soul/kick.wav',
+      buffer: undefined
+    },
+    56: {
+      sample: 'snare',
+      url: 'sound/soul/snare_1.wav',
+      buffer: undefined
+    },
+    57: {
+      sample: 'cowbell',
+      url: 'sound/soul/cowbell.wav',
+      buffer: undefined
+    },
+    48: {
+      sample: 'hi-hat',
+      url: 'sound/soul/hihat.wav',
+      buffer: undefined
+    },
+    89: {
+      sample: 'crash',
+      url: 'sound/soul/crash.wav',
+      buffer: undefined
+    },
+    85: {
+      sample: 'funky',
+      url: 'sound/soul/funky.wav',
+      buffer: undefined
+    },
+    73: {
+      sample: 'horn stab',
+      url: 'sound/soul/horn.wav',
+      buffer: undefined
+    },
+    79: {
+      sample: 'JB horn',
+      url: 'sound/soul/jb_horn.wav',
+      buffer: undefined
+    },
+    72: {
+      sample: 'one',
+      url: 'sound/soul/one.wav',
+      buffer: undefined
+    },
+    74: {
+      sample: 'two',
+      url: 'sound/soul/two.wav',
+      buffer: undefined
+    },
+    75: {
+      sample: 'three',
+      url: 'sound/soul/three.wav',
+      buffer: undefined
+    },
+    76: {
+      sample: 'four',
+      url: 'sound/soul/four.wav',
+      buffer: undefined
+    },
+    66: {
+      sample: 'Hit Me',
+      url: 'sound/soul/hit_me.wav',
+      buffer: undefined
+    },
+    78: {
+      sample: 'huh',
+      url: 'sound/soul/jb_huh.wav',
+      buffer: undefined
+    },
+    77: {
+      sample: 'ha',
+      url: 'sound/soul/ha.wav',
+      buffer: undefined
+    },
+    188: {
+      sample: 'yow',
+      url: 'sound/soul/yow.wav',
+      buffer: undefined
+    }
+  }
+};
 
 // var bank6 = {
 //   name: 'Hidden',
@@ -508,12 +508,12 @@ var bank4 = {
 //       url: 'sound/easter-egg/'
 //       buffer: undefined
 //     },
-//     78: {
+//     66: {
 //       sample: ''
 //       url: 'sound/easter-egg/'
 //       buffer: undefined
 //     },
-//     77: {
+//     78: {
 //       sample: ''
 //       url: 'sound/easter-egg/'
 //       buffer: undefined
@@ -524,8 +524,8 @@ var bank4 = {
 var banks = {
   1: bank1,
   2: bank2,
-  // 3: bank3
-  4: bank4
-  // 5: bank5,
+  3: bank3,
+  4: bank4,
+  5: bank5
   // 6: bank6
 };
