@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+  var lightDemo = function(){
+
+  };
+
   var AudioContext = AudioContext || webkitAudioContext;
 
   var context = new AudioContext(), buffer;
@@ -95,6 +99,9 @@ $(document).ready(function(){
     setTimeout(function(){
       currentPad.removeClass("selected");
     }, 100);
+    setTimeout(function(){
+      $('#sample span').empty();
+    }, 500);
   });
 
 
@@ -105,6 +112,9 @@ $(document).ready(function(){
     $('#sample span').text(bank.sounds[soundId].sample);
 
     playSound(soundId, bank);
+    setTimeout(function(){
+      $('#sample span').empty();
+    }, 500);
   });
 
 });
