@@ -10,9 +10,26 @@ images/undo.png
 js/app.js
 js/banks.js
 
+sound/808/block.wav
+sound/808/clap.wav
+sound/808/closed_hat.wav
+sound/808/cowbell.wav
+sound/808/cymbal.wav
+sound/808/high_congo.wav
+sound/808/high_tom.wav
+sound/808/kick.wav
+sound/808/low_congo.wav
+sound/808/low_tom.wav
+sound/808/medium_congo.wav
+sound/808/medium_tom.wav
+sound/808/open_hat.wav
+sound/808/rimshot.wav
+sound/808/shaker.wav
+sound/808/snare.wav
+
 sound/dancehall/airhorn.mp3
 sound/dancehall/beenie.wav
-sound/dancehall/bumbaclot.wav
+sound/dancehall/bumbaclat.wav
 sound/dancehall/dutty.wav
 sound/dancehall/gunshot.wav
 sound/dancehall/hey.mp3
@@ -26,3 +43,4 @@ sound/dancehall/snare.wav
 sound/dancehall/timbali.wav
 sound/dancehall/uhh.wav
 sound/dancehall/yeah_mon.wav
+
