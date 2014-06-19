@@ -42,9 +42,9 @@ $(document).ready(function(){
 
   var loadAudioFile = function (url) {
     // cache here
-    lawnchair(function(){
-      this.save({msg:'hooray!'})
-    });
+    // lawnchair(function(){
+    //   this.save({msg:'hooray!'})
+    // });
 
     var request = new XMLHttpRequest();
 
