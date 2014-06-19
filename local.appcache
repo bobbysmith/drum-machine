@@ -7,6 +7,8 @@ images/play.png
 images/record.png
 images/stop.png
 images/undo.png
+fonts/digital-7.ttf
+fonts/PROMETHEUS.ttf
 js/app.js
 js/banks.js
 http://code.jquery.com/jquery.min.js
