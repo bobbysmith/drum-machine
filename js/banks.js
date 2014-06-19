@@ -434,98 +434,98 @@ var bank5 = {
   }
 };
 
-// var bank6 = {
-//   name: 'Hidden',
-//   description: "Shhh, it's a secret",
-//   sounds: {
-//     52: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     53: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     54: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     55: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     82: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     84: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     89: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     85: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     70: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     71: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     72: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     74: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     86: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     66: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     66: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     },
-//     78: {
-//       sample: ''
-//       url: 'sound/easter-egg/'
-//       buffer: undefined
-//     }
-//   }
-// };
+var bank6 = {
+  name: 'Hidden',
+  description: "Shhh, it's a secret"
+  // sounds: {
+  //   52: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   53: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   54: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   55: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   82: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   84: {,
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   89: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   85: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   70: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   71: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   72: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   74: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   86: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   66: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   66: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   },
+  //   78: {
+  //     sample: '',
+  //     url: 'sound/easter-egg/',
+  //     buffer: undefined
+  //   }
+  // }
+};
 
 var banks = {
   1: bank1,
   2: bank2,
   3: bank3,
   4: bank4,
-  5: bank5
-  // 6: bank6
+  5: bank5,
+  6: bank6
 };
