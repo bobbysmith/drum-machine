@@ -16,9 +16,14 @@
   };
 
   $('.bank').on('click', function (e){
+    e.preventDefault();
     selectBank($(this).data('id'));
 
     var bank = selectedBank();
+  });
+
+  $('#record').on('click', function(){
+    toggleRecording();
   });
 
   function selectBank(bankId) {
@@ -35,7 +40,7 @@
     if (bankKeycodeMap[e.keyCode]) {
       selectBank(bankKeycodeMap[e.keyCode]);
       var bank = selectedBank();
-      }
+    }
     // } else if (padKeyCode[e.keyCode]) {
 
     // }
@@ -69,6 +74,11 @@
     }, 700);
   });
 
+  $("#submit-button").on('click', function (e) {
+    e.preventDefault();
+    var bpm = $("#bpm").val();
+    JS404.setBPM(bpm);
+  });
 
   var lightDemo = function(){
     $('.pad[data-id]').each(function(index, element) {
@@ -98,7 +108,6 @@
 
   window.JS404 || (window.JS404 = {});
   JS404.bindPresentation = function () {
-    // TODO: Bind jquery events
     lightDemo();
     bankLights();
   };
