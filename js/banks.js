@@ -445,7 +445,7 @@
         buffer: undefined
       },
       56: {
-        sample: 'find an element inside of the doooooom',
+        sample: 'the doooooom',
         url: 'sound/easter-egg/dom.wav',
         buffer: undefined
       },
@@ -455,7 +455,7 @@
         buffer: undefined
       },
       48: {
-        sample: 'an api with extensibility',
+        sample: 'api',
         url: 'sound/easter-egg/api.wav',
         buffer: undefined
       },
@@ -465,12 +465,12 @@
         buffer: undefined
       },
       85: {
-        sample: 'the fundamentals of design',
+        sample: 'design',
         url: 'sound/easter-egg/design.wav',
         buffer: undefined
       },
       73: {
-        sample: 'warming up with ember',
+        sample: 'ember',
         url: 'sound/easter-egg/ember.wav',
         buffer: undefined
       },
@@ -510,7 +510,7 @@
         buffer: undefined
       },
       77: {
-        sample: 'css is such a mess',
+        sample: 'css',
         url: 'sound/easter-egg/css.wav',
         buffer: undefined
       },

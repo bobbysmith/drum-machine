@@ -11,8 +11,10 @@ fonts/digital-7.ttf
 fonts/PROMETHEUS.ttf
 js/app.js
 js/banks.js
+js/presentation.js
 http://code.jquery.com/jquery.min.js
 http://fonts.googleapis.com/css?family=Play
+http://fonts.googleapis.com/css?family=Ubuntu:400,700
 
 sound/808/block.wav
 sound/808/clap.wav
@@ -98,4 +100,21 @@ sound/soul/snare_1.wav
 sound/soul/three.wav
 sound/soul/two.wav
 sound/soul/yow.wav
+
+sound/easter-egg/ajax.wav
+sound/easter-egg/api.wav
+sound/easter-egg/coffeescript.wav
+sound/easter-egg/css.wav
+sound/easter-egg/design.wav
+sound/easter-egg/dom.wav
+sound/easter-egg/ember.wav
+sound/easter-egg/git.wav
+sound/easter-egg/js_roadtrip.wav
+sound/easter-egg/mks.wav
+sound/easter-egg/node.wav
+sound/easter-egg/rails.wav
+sound/easter-egg/rspec.wav
+sound/easter-egg/sassy.wav
+sound/easter-egg/tdd.wav
+sound/easter-egg/truth_dom.wav
 
