@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" manifest="local.appcache">
+<html lang="en" >
+<!-- manifest="local.appcache" -->
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,20 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="shortcut icon" type="image/png" href="images/favicon.png">
       <link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="css/normalize.css">
+      <!-- <link rel="stylesheet" href="css/loader.css"> -->
       <link rel="stylesheet" href="css/style.css">
       <script src="http://code.jquery.com/jquery.min.js"></script>
-      <!-- <script type="text/javascript" src="js/lawnchair.min.js"></script> -->
       <script type="text/javascript" src="js/banks.js"></script>
       <script type="text/javascript" src="js/app.js"></script>
+      <script type="text/javascript" src="js/presentation.js"></script>
+      <!-- <script src="http://heartcode-canvasloader.googlecode.com/files/heartcode-canvasloader-min-0.9.1.js"></script> -->
   </head>
   <body>
     <div id='container'>
       <div id='logo'>
         <h1> JS-404<sup><span>®</span></sup></h1>
-        <!-- <h2>bla bla bla</h2> -->
       </div>
       <div id='screen'>
         <div id='current-bank' class='titles'>Current Bank: <span></span></div>
@@ -29,11 +32,6 @@
       <div id='left'>
         <div id='transport'>
           <div id='banks'>
-
-<!-- <marquee behavior="scroll" direction="left">Your continuous scroll text goes here</marquee> -->
-
-
-
             <button class='bank selected' id='808' data-id='1'>1</button>
             <button class='bank' id='house' data-id='2'>2</button>
             <button class='bank' id='dancehall' data-id='3'>3</button>
@@ -49,6 +47,7 @@
           </div>
         </div>
       </div>
+
       <div id='pads'>
         <button class='pad' data-id='55'>7</button>
         <button class='pad' data-id='56'>8</button>
@@ -72,5 +71,25 @@
         <a href="http://www.twitter.com/yungwelchsgrape" target="_blank">@yungwelchsgrape</a>
       </div>
     </div>
+
+  <script type="text/javascript">
+
+    // TODO: Hide the loader
+    // TODO: Hide the overlay
+    JS404.bindPresentation();
+
+    // var cl = new CanvasLoader('canvasloader-container');
+    // cl.setDiameter(200); // default is 40
+    // cl.setDensity(29); // default is 40
+    // cl.setRange(1.4); // default is 1.3
+    // cl.show(); // Hidden by default
+
+    // var loaderObj = document.getElementById("canvasLoader");
+    // loaderObj.style.position = "absolute";
+    // loaderObj.style["top"] = cl.getDiameter() * -0.5 + "px";
+    // loaderObj.style["left"] = cl.getDiameter() * -0.5 + "px";
+
+  </script>
+
   </body>
 </html>

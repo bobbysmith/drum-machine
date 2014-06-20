@@ -1,38 +1,29 @@
 
 * {
   border-radius: 5px;
-  /*border: 1px solid green;*/
-}
-
-html {
-  height: 100%
 }
 
 body {
-  background: #555;
   height: 100%;
   font-family: "Arial", Helvetica, Geneva, sans-serif;
-  /*text-transform: uppercase;*/
   clear:both;
+  background: #837393;
 }
 
 #container {
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-
   margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 0;
   padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  /*padding: 10px 30px;*/
   width: 950px;
   height: 600px;
-  background: -webkit-linear-gradient(bottom, rgb(191,194,188) 0%, rgb(206,210,201) 50%);
+  /*background: -webkit-linear-gradient(bottom, rgb(191,194,188) 0%, rgb(206,210,201) 50%);*/
   background: #2e2e2e;
-  /*position: relative;*/
   box-shadow: 0px 0px 25px #111 inset, 0px 5px 5px #111;
   border: 2px solid #333;
   border-radius: 20px
@@ -49,13 +40,12 @@ body {
 }
 
 #logo h1 {
-  /*background: white;*/
   margin-bottom: 0px;
   padding-left: 15px;
   font-size: 2.5em;
   font-family: "Prometheus";
   color: white;
-  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
@@ -65,9 +55,6 @@ body {
 }
 
 #screen {
-  /*background: -webkit-linear-gradient(bottom, rgb(60,60,60) 0%, rgb(90,90,90) 100%);*/
-  /*padding: 10px;*/
-  /*position: absolute;*/
   top: 25px;
   right: 25px;
   padding: 0;
@@ -82,9 +69,6 @@ body {
   border-top-width: 3px;
   border-bottom-color: #bbb;
   box-shadow: 0px 0px 10px #888 inset;
-/*  -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
-  -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
-  box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);*/
   -webkit-box-shadow: -2px -4px 73px -14px rgba(183,202,218,1);
   -moz-box-shadow: -2px -4px 73px -14px rgba(183,202,218,1);
   box-shadow: -2px -4px 73px -14px rgba(183,202,218,1);
@@ -108,7 +92,6 @@ body {
 
 #pads {
   width: 535px;
-  /*background: -webkit-linear-gradient(bottom, rgb(80,96,97) 0%, rgb(99,119,122) 100%);*/
   background: #2e2e2e;
   padding: 15px;
   vertical-align: baseline;
@@ -120,14 +103,14 @@ body {
 }
 
 #pads button {
-  background: #ebffa3; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  #ebffa3 0%, #ff5c2b 76%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ebffa3), color-stop(76%,#ff5c2b)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #ebffa3 0%,#ff5c2b 76%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #ebffa3 0%,#ff5c2b 76%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #ebffa3 0%,#ff5c2b 76%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #ebffa3 0%,#ff5c2b 76%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebffa3', endColorstr='#ff5c2b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: #ebffa3;
+  background: -moz-radial-gradient(center, ellipse cover,  #ebffa3 0%, #ff5c2b 76%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ebffa3), color-stop(76%,#ff5c2b));
+  background: -webkit-radial-gradient(center, ellipse cover,  #ebffa3 0%,#ff5c2b 76%);
+  background: -o-radial-gradient(center, ellipse cover,  #ebffa3 0%,#ff5c2b 76%);
+  background: -ms-radial-gradient(center, ellipse cover,  #ebffa3 0%,#ff5c2b 76%);
+  background: radial-gradient(ellipse at center,  #ebffa3 0%,#ff5c2b 76%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebffa3', endColorstr='#ff5c2b',GradientType=1 );
 
   box-shadow: 0 0 3px #222;
   border: none;
@@ -135,26 +118,15 @@ body {
   width:  110px;
   margin: 10px;
   text-shadow:  0 1px 2px #fff;
-  /*text-align: right;*/
-
   padding-top: 85px;
   display: inline-block;
-  font-family: 'PressStart'
+  font-family: 'Ubuntu';
   font-size: 1.2em;
   color: black;
-/*  -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .30);
-  -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .30);
-  box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .30);*/
 }
-/*
-@-webkit-keyframes pad_hit {
-  0%   { background: #f56b6b; }
-  100% { background: #ca8f8f; }
-}*/
-
 
 #pads button:active {
-  background: #ffaf9b; /* Old browsers */
+  background: #ffaf9b;
   background: -moz-radial-gradient(center, ellipse cover,  #ffaf9b 0%, #ff3700 74%, #ff3700 74%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffaf9b), color-stop(74%,#ff3700), color-stop(74%,#ff3700)); /* Chrome,Safari4+ */
   background: -webkit-radial-gradient(center, ellipse cover,  #ffaf9b 0%,#ff3700 74%,#ff3700 74%); /* Chrome10+,Safari5.1+ */
@@ -168,7 +140,7 @@ body {
 }
 
 #pads button.selected {
-  background: #ffaf9b; /* Old browsers */
+  background: #ffaf9b;
   background: -moz-radial-gradient(center, ellipse cover,  #ffaf9b 0%, #ff3700 74%, #ff3700 74%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffaf9b), color-stop(74%,#ff3700), color-stop(74%,#ff3700)); /* Chrome,Safari4+ */
   background: -webkit-radial-gradient(center, ellipse cover,  #ffaf9b 0%,#ff3700 74%,#ff3700 74%); /* Chrome10+,Safari5.1+ */
@@ -181,11 +153,6 @@ body {
   box-shadow: -2px -2px 65px -2px rgba(240,137,63,1);
 }
 
-/*#pads button.active {
-  background: #ca8f8f;
-
-}*/
-
 #pads button:focus {
   outline: 0;
 }
@@ -197,7 +164,7 @@ body {
 }
 
 #transport #banks button {
-  background: #eeffb5; /* Old browsers */
+  background: #eeffb5;
   background: -moz-radial-gradient(center, ellipse cover,  #eeffb5 0%, #f0ff7f 46%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#eeffb5), color-stop(46%,#f0ff7f)); /* Chrome,Safari4+ */
   background: -webkit-radial-gradient(center, ellipse cover,  #eeffb5 0%,#f0ff7f 46%); /* Chrome10+,Safari5.1+ */
@@ -209,20 +176,13 @@ body {
   display: block;
   width: 250px;
   height: 50px;
-  /*padding: 10px 20px 10px 20px;*/
   margin-left: 60px;
   margin-bottom: 10px;
-  /*font-size: 1.5em;*/
-  /*font-family: 'Play';*/
   text-align: right;
   color: black;
   padding-top: 20px;
   font-family: 'Digital-7';
   font-size: 1.8em;
-
-/*  -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
-  -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
-  box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);*/
 }
 
 #transport #banks #hidden {
@@ -235,7 +195,7 @@ body {
 
 #transport #banks .selected {
   outline: 0;
-  background: #eeffb5; /* Old browsers */
+  background: #eeffb5;
   background: -moz-radial-gradient(center, ellipse cover,  #eeffb5 0%, #e1ff00 46%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#eeffb5), color-stop(46%,#e1ff00)); /* Chrome,Safari4+ */
   background: -webkit-radial-gradient(center, ellipse cover,  #eeffb5 0%,#e1ff00 46%); /* Chrome10+,Safari5.1+ */
@@ -256,7 +216,7 @@ body {
 #transport #track button{
   width: 60px;
   height: 40px;
-  background: #ffffff; /* Old browsers */
+  background: #ffffff;
   background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #00ef4f 77%, #00f052 77%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(77%,#00ef4f), color-stop(77%,#00f052)); /* Chrome,Safari4+ */
   background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#00ef4f 77%,#00f052 77%); /* Chrome10+,Safari5.1+ */
@@ -273,7 +233,7 @@ body {
 }
 
 #transport #track button:focus {
-  background: #ffffff; /* Old browsers */
+  background: #ffffff;
   background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #00dd56 52%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(52%,#00dd56)); /* Chrome,Safari4+ */
   background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#00dd56 52%); /* Chrome10+,Safari5.1+ */
@@ -288,7 +248,7 @@ body {
 }
 
 #transport #track #record:focus {
-  background: #e3ffdd; /* Old browsers */
+  background: #e3ffdd;
   background: -moz-radial-gradient(center, ellipse cover,  #e3ffdd 4%, #df0a35 78%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(4%,#e3ffdd), color-stop(78%,#df0a35)); /* Chrome,Safari4+ */
   background: -webkit-radial-gradient(center, ellipse cover,  #e3ffdd 4%,#df0a35 78%); /* Chrome10+,Safari5.1+ */
@@ -336,9 +296,8 @@ body {
 #container .about a {
   text-decoration: none;
   color: white;
-  /*color:#228DFF;*/
-  font-family:"PressStart";
-  font-size: 0.9em;
+  font-family:"Ubuntu";
+  font-size: 1.1em;
   padding: 10px;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -351,7 +310,6 @@ body {
   animation: neon2 0.5s ease-in-out infinite alternate;
 }
 
-/*//////////////*/
 /*GLOW*/
 @font-face {
   font-family: 'PressStart';
@@ -440,5 +398,4 @@ body {
                0 0 75px #228DFF;
   }
 }
-
 
