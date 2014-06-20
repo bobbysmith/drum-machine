@@ -536,11 +536,4 @@
     JS404.banks[i].id = i;
   }
 
-  // bank1.id = 1;
-  // bank2.id = 2;
-  // bank3.id = 3;
-  // bank4.id = 4;
-  // bank5.id = 5;
-  // bank6.id = 6;
-
 })();

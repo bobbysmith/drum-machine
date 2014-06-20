@@ -7,7 +7,6 @@ body {
   background-image: url(/images/background.jpg);
 }
 
-
 #container {
   margin: 20px auto;
   position: relative;
@@ -280,12 +279,10 @@ body {
 
 .form {
   width: 60px;
-/*background: white;*/
-padding: 5px;
 margin: 0 auto;
-/*display: inline-flex;*/
 display: inline-block;
 position: absolute;
+padding-left: 10px;
 }
 
 #transport #bpm {
@@ -295,36 +292,21 @@ position: absolute;
 }
 
 #submit-button {
-   border-top: 1px solid #000000;
-   background: #ffffff;
-   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
-   background: -webkit-linear-gradient(top, #ffffff, #ffffff);
-   background: -moz-linear-gradient(top, #ffffff, #ffffff);
-   background: -ms-linear-gradient(top, #ffffff, #ffffff);
-   background: -o-linear-gradient(top, #ffffff, #ffffff);
-   padding: 3.5px 7px;
-   -webkit-border-radius: 40px;
-   -moz-border-radius: 40px;
-   border-radius: 40px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: #000000;
-   font-size: 9px;
-   font-family: 'Ubuntu', Helvetica, Arial, Sans-Serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
-.submit:hover {
-   border-top-color: #515354;
-   background: #515354;
-   color: #ccc;
-   }
-.submit:active {
-   border-top-color: #0099ff;
-   background: #0099ff;
-   }
+  border : solid 0px #ffffff;
+  border-radius : 3px;
+  moz-border-radius : 3px;
+  -webkit-box-shadow : inset 0px 0px 5px rgba(0,0,0,1.0);
+  -moz-box-shadow : inset 0px 0px 5px rgba(0,0,0,1.0);
+  box-shadow : inset 0px 0px 5px rgba(0,0,0,1.0);
+  font-size : 10px;
+  color : #000;
+  padding : 2px 7px;
+  background-color : #03ee51;
+  font-family: 'Ubuntu';
+  width:  50px;
+}
+
+
 
 
 #container .about {
