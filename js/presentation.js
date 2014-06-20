@@ -23,7 +23,12 @@
   });
 
   $('#record').on('click', function(){
-    toggleRecording();
+    JS404.toggleRecording();
+  });
+
+  $('#stop').on('click', function(){
+    // JS404.toggleRecording();
+    isRecording = false;
   });
 
   function selectBank(bankId) {

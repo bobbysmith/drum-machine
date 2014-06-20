@@ -36,6 +36,10 @@ $(document).ready(function(){
     recording = [];
   };
 
+  var stopRecording = function(){
+    isRecording = false;
+  };
+
   var recordBeat = function(padId){
     var beat = {};
     beat["time since start"] = Date.now() - startTime;
