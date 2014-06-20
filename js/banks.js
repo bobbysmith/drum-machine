@@ -523,13 +523,24 @@
   };
 
   window.JS404 || (window.JS404 = {});
-  JS404.banks = {
-    1: bank1,
-    2: bank2,
-    3: bank3,
-    4: bank4,
-    5: bank5,
-    6: bank6
-  };
+  JS404.banks = [
+    bank1,
+    bank2,
+    bank3,
+    bank4,
+    bank5,
+    bank6
+  ];
+
+  for (var i = 0; i < JS404.banks.length; i += 1) {
+    JS404.banks[i].id = i;
+  }
+
+  // bank1.id = 1;
+  // bank2.id = 2;
+  // bank3.id = 3;
+  // bank4.id = 4;
+  // bank5.id = 5;
+  // bank6.id = 6;
 
 })();

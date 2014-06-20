@@ -40,23 +40,23 @@ $(document).ready(function(){
     isRecording = false;
   };
 
-  var recordBeat = function(padId){
+  var recordBeat = function(padId, bankId){
     var beat = {};
-    beat["time since start"] = Date.now() - startTime;
+    beat["since start"] = Date.now() - startTime;
+    beat.bankId = bankId;
     beat.pads = [];
     beat.pads.push(padId);
+    // beat.bank.push(bankId);
     recording.push(beat);
   };
 
-  var playback = function() {
+  var playback = function(recording) {
     for(var i = 0; i < recording.length; i++){
-      setTimeout(function(){
-        if(beat[i]){
-          for(var i in recording){
-            playSound();
-          };
-        };
-      }, intervalTime * i);
+      (function(i) {
+        setTimeout(function(){
+          window.JS404.playSound(recording[i].pads[0], recording[i].bankId);
+        }, recording[i]['since start']);
+      })(i);
     };
   };
 
@@ -72,11 +72,11 @@ $(document).ready(function(){
   window.JS404 || (window.JS404 = {});
 
   $.extend(window.JS404, {
-    playSound: function (soundId, bank) {
-      var sound = bank.sounds[soundId];
+    playSound: function (soundId, bankId) {
+      var sound = JS404.banks[bankId].sounds[soundId];
       loadAudioFile(sound.url);
         if (isRecording){
-          recordBeat(soundId);
+          recordBeat(soundId, bankId);
         }
     },
     setBPM: function (newBPM) {
@@ -87,6 +87,10 @@ $(document).ready(function(){
       // recording to true
       startRecording();
       return isRecording;
+    },
+    playback: function () {
+      isRecording = false;
+      playback(recording);
     }
   });
 

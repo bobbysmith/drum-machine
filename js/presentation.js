@@ -11,7 +11,7 @@
 
   var selectedBank = function(){
     var bankId = $('.bank.selected').data('id');
-    var bank = JS404.banks[bankId];
+    var bank = JS404.banks[bankId - 1];
     return bank;
   };
 
@@ -27,9 +27,12 @@
   });
 
   $('#stop').on('click', function(){
-    // JS404.toggleRecording();
     isRecording = false;
   });
+
+  $('#play').on('click', function(){
+    JS404.playback();
+  })
 
   function selectBank(bankId) {
       $('.bank.selected').removeClass('selected');
@@ -56,7 +59,7 @@
 
     $('#sample span').text(bank.sounds[soundId].sample);
 
-    JS404.playSound(soundId, bank);
+    JS404.playSound(soundId, bank.id);
 
     setTimeout(function(){
       currentPad.removeClass("selected");
