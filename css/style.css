@@ -28,14 +28,20 @@ body {
 
 a#modal {
   font-family: "Helvetica";
-  color: #fe5d2b;
+  color: white;
   text-decoration: none;
   float: right;
   padding-top: 10px;
+    -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 a#modal:hover {
   color: white;
+    -webkit-animation: neon2 0.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 0.5s ease-in-out infinite alternate;
+  animation: neon2 0.5s ease-in-out infinite alternate;
 }
 a.mks {
   color: #cae5f7;
