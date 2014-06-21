@@ -26,7 +26,7 @@ body {
   float: left;
 }
 
-a {
+a#modal {
   font-family: "Helvetica";
   color: #fe5d2b;
   text-decoration: none;
@@ -34,8 +34,19 @@ a {
   padding-top: 10px;
 }
 
-a:hover {
+a#modal:hover {
   color: white;
+}
+a.mks {
+  color: #cae5f7;
+}
+
+a.mks:hover {
+  color: #549ecd;
+}
+
+a.mks:visited {
+  color: #549ecd;
 }
 
 .modalDialog {
