@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" manifest="app.appcache">
+<html lang="en" >
+<!-- manifest="app.appcache" -->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,18 @@
   </head>
   <body>
     <div id='container'>
+      <a href="#openModal" id="modal">About</a>
+
+      <div id="openModal" class="modalDialog">
+          <div> <a href="#close" title="Close" class="close">X</a>
+
+                <h2>About</h2>
+
+              <p>A senior level project done while studying web development at <a href="http://www.makersquare.com" target="_blank">MakerSquare</a> in Austin, TX.</p>
+              <p>Click or press a number 1-5 to choose a sound bank.  Each pad has a corresponding key assigned to it.  Tap out a beat and enjoy.  You can record and listen back to your beat.  This is a work in progess.</p>
+          </div>
+      </div>
+
       <div id='logo'>
         <h1> JS-404<sup><span>®</span></sup></h1>
       </div>
