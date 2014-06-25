@@ -72,7 +72,6 @@
 
   $('.pad').on('click', function (e){
     var soundId = $(this).data('id');
-    console.log(soundId);
     var bank = selectedBank();
     $('#sample span').text(bank.sounds[soundId].sample);
 
