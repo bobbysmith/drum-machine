@@ -72,11 +72,11 @@
 
   $('.pad').on('click', function (e){
     var soundId = $(this).data('id');
+    console.log(soundId);
     var bank = selectedBank();
-
     $('#sample span').text(bank.sounds[soundId].sample);
 
-    JS404.playSound(soundId, bank);
+    JS404.playSound(soundId, bank.id);
     setTimeout(function(){
       $('#sample span').empty();
     }, 700);
