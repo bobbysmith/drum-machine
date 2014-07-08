@@ -27,7 +27,8 @@
   });
 
   $('#stop').on('click', function(){
-    isRecording = false;
+    // isRecording = false;
+    JS404.stop();
   });
 
   $('#play').on('click', function(){

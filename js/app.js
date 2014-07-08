@@ -50,14 +50,23 @@ $(document).ready(function(){
     recording.push(beat);
   };
 
+  var isStopping = false;
+
   var playback = function(recording) {
+    isStopping = false;
+
     for(var i = 0; i < recording.length; i++){
       (function(i) {
         setTimeout(function(){
+          if (isStopping) return;
           window.JS404.playSound(recording[i].pads[0], recording[i].bankId);
         }, recording[i]['since start']);
       })(i);
     };
+  };
+
+  var stop = function() {
+    isStopping = true;
   };
 
 
@@ -91,6 +100,9 @@ $(document).ready(function(){
     playback: function () {
       isRecording = false;
       playback(recording);
+    },
+    stop: function () {
+      isStopping = true;
     }
   });
 });
