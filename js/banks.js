@@ -528,8 +528,8 @@
     bank2,
     bank3,
     bank4,
-    bank5,
-    bank6
+    bank5
+    // bank6
   ];
 
   for (var i = 0; i < JS404.banks.length; i += 1) {
