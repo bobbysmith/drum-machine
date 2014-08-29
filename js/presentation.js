@@ -27,7 +27,6 @@
   });
 
   $('#stop').on('click', function(){
-    // isRecording = false;
     JS404.stop();
   });
 
@@ -50,9 +49,6 @@
       selectBank(bankKeycodeMap[e.keyCode]);
       var bank = selectedBank();
     }
-    // } else if (padKeyCode[e.keyCode]) {
-
-    // }
     var currentPad = $(".pad[data-id=" + e.keyCode + "]");
     currentPad.addClass("selected");
     var soundId = e.keyCode;
