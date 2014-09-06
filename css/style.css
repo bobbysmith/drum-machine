@@ -4,7 +4,9 @@
 }
 
 body {
-  background-image: url(../images/background.jpg);
+  background: url(../images/background.jpg) center no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 #container {
@@ -391,8 +393,6 @@ padding-left: 10px;
 #submit-button:focus {
   outline: none;
 }
-
-
 
 
 #container .about {

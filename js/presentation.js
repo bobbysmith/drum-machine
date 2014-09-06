@@ -5,8 +5,8 @@
     50: 2,
     51: 3,
     52: 4,
-    53: 5,
-    54: 6
+    53: 5
+    // 54: 6
   };
 
   var selectedBank = function(){
@@ -73,16 +73,17 @@
     $('#sample span').text(bank.sounds[soundId].sample);
 
     JS404.playSound(soundId, bank.id);
+
     setTimeout(function(){
       $('#sample span').empty();
     }, 700);
   });
 
-  $("#submit-button").on('click', function (e) {
-    e.preventDefault();
-    var bpm = $("#bpm").val();
-    JS404.setBPM(bpm);
-  });
+  // $("#submit-button").on('click', function (e) {
+  //   e.preventDefault();
+  //   var bpm = $("#bpm").val();
+  //   JS404.setBPM(bpm);
+  // });
 
   var lightDemo = function(){
     $('.pad[data-id]').each(function(index, element) {
@@ -114,6 +115,7 @@
   JS404.bindPresentation = function () {
     lightDemo();
     bankLights();
+
   };
 
 })();

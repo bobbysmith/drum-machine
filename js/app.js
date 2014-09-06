@@ -93,7 +93,6 @@ $(document).ready(function(){
       bpm = newBPM;
     },
     toggleRecording: function () {
-      // recording to true
       startRecording();
       return isRecording;
     },
